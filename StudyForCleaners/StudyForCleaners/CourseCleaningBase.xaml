@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyForCleaners.CourseCleaningBase"
+             Title="Уроки курса ''Основы клининга''">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Frame BorderColor="Black" Padding="10" Margin="0,0,0,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="https://region-ural.ru/wp-content/uploads/2018/06/Uslugi-klininga.jpg" WidthRequest="80" HeightRequest="80" VerticalOptions="Center" />
+                    <Label Text="Введение в клининг" FontSize="18" FontAttributes="Bold" Grid.Column="1" VerticalOptions="Center" />
+                    <Button Text="Перейти" Clicked="Lesson1Button_Clicked" Grid.Column="1" HorizontalOptions="End" />
+                </Grid>
+            </Frame>
+
+            <Frame BorderColor="Black" Padding="10" Margin="0,0,0,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="https://iron-bet.ru/upload/iblock/28e/28e15054cc184593232f92d3ca9b1d5b.jpg" WidthRequest="80" HeightRequest="80" VerticalOptions="Center" />
+                    <Label Text="Тестирование" FontSize="18" FontAttributes="Bold" Grid.Column="1" VerticalOptions="Center" />
+                    <Button Text="Перейти" Clicked="Lesson2Button_Clicked" Grid.Column="1" HorizontalOptions="End" />
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

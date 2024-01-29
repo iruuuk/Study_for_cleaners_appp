@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyForCleaners.TimetablePage"
+             Title="Создание расписания">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackLayout>
+                <Button Text="Добавить урок" Clicked="AddLessonButtonClicked" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+                <ScrollView>
+                    <StackLayout x:Name="mainStackLayout">
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1" x:Name="navigationMenu" BackgroundColor="#34495E" WidthRequest="250" VerticalOptions="FillAndExpand" IsVisible="False">
+                <Button Text="Профиль" Clicked="OnProfileClicked" BackgroundColor="#34495E" TextColor="White" x:Name="profile" />
+                <Button Text="Мои курсы" Clicked="OnMyCoursesClicked" BackgroundColor="#34495E" TextColor="White" />
+                <Button Text="Расписание" Clicked="OnTimetableClicked" BackgroundColor="#34495E" TextColor="White" />
+                <Button Text="Вопросы" Clicked="OnQuestionClicked" BackgroundColor="#34495E" TextColor="White" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

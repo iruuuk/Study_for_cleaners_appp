@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyForCleaners.AnswersPage"
+             Title="База вопросов">
+    <StackLayout>
+        <StackLayout>
+            <Label x:Name="question1Label" Text="Вопрос 1:" FontAttributes="Bold" />
+            <Label x:Name="question1Text" Text="Как мне найти расписание занятий?" />
+            <Entry x:Name="answer1Entry" Placeholder="Введите ответ" />
+            <Button Text="Отправить" Clicked="SendAnswerButton_Clicked" CommandParameter="1" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="question2Label" Text="Вопрос 2:" FontAttributes="Bold" />
+            <Label x:Name="question2Text" Text="Где расположены курсы?" />
+            <Entry x:Name="answer2Entry" Placeholder="Введите ответ" />
+            <Button Text="Отправить" Clicked="SendAnswerButton_Clicked" CommandParameter="2" />
+        </StackLayout>
+
+        <StackLayout>
+            <Label x:Name="question3Label" Text="Вопрос 3:" FontAttributes="Bold" />
+            <Label x:Name="question3Text" Text="Как получить сертификат о прохождении курса?" />
+            <Entry x:Name="answer3Entry" Placeholder="Введите ответ" />
+            <Button Text="Отправить" Clicked="SendAnswerButton_Clicked" CommandParameter="3" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

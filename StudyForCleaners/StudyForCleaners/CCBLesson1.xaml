@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyForCleaners.CCBLesson1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Урок 1: Введение в клининг" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,20,0,10" />
+            <WebView x:Name="videoWebView1" VerticalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyForCleaners.SupportPage"
+             Title="Профиль службы поддержки">
+
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="ПРОФИЛЬ" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,10,0,20" />
+
+            <Image Source="https://static.tildacdn.com/tild6265-6664-4933-b063-323734386466/IMG_5968___.jpg" WidthRequest="180" HeightRequest="180" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+            <Label Text="Фамилия:" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Петров" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Имя:" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Иван" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Отчество:" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Васильевич" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Дата рождения:" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="03.02.1989" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="E-mail:" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Petrov.IV@support-team.ru" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="Должность:" FontSize="17" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,10" />
+            <Label Text="оператор службы поддержки" FontSize="15" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+            <Button Text="База вопросов" Clicked="OnQuestionsDatabaseClicked" FontSize="18" HorizontalOptions="Center" />
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

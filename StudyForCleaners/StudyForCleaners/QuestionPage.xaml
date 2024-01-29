@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StudyForCleaners.QuestionPage"
+             Title="Задайте Ваш вопрос">
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1" BackgroundColor="White">
+                <Entry x:Name="questionEntry" Placeholder="Введите ваш вопрос" TextColor="Black" />
+                <Label x:Name="errorLabel" Text="Заполните поле" TextColor="Red" IsVisible="False" />
+                <Button Text="Отправить" Clicked="OnSendQuestionClicked" />
+            </StackLayout>
+            
+            <StackLayout Grid.Row="1" x:Name="navigationMenu" BackgroundColor="#34495E" WidthRequest="250" VerticalOptions="FillAndExpand" IsVisible="False">
+                <Button Text="Профиль" Clicked="OnProfileClicked" BackgroundColor="#34495E" TextColor="White" />
+                <Label x:Name="profile" Text="Информация о профиле" TextColor="White" IsVisible="False" />
+                <Button Text="Мои курсы" Clicked="OnMyCoursesClicked" BackgroundColor="#34495E" TextColor="White" />
+                <Button Text="Расписание" Clicked="OnTimetableClicked" BackgroundColor="#34495E" TextColor="White" />
+                <Button Text="Задать вопрос" Clicked="OnQuestionClicked" BackgroundColor="#34495E" TextColor="White" />
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
